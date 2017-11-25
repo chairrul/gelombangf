@@ -1,0 +1,49 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="assets/logoo.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+
+<ion-content class="menu" padding>
+  <div class="logohome">
+    <img class="img-logo" src="../assets/logoo.png" alt="">
+  </div>
+
+
+
+
+  <div class="grid-basic-page">
+    <ion-grid>
+      <ion-row>
+        <ion-col (click)="main('MateriPage')">
+          <div class="twocolordiv">
+            <img src="assets/book.png" width="60px">
+            <p><b>Materi</b></p>
+          </div>
+        </ion-col>
+        <ion-col (click)="main('QuizPage')">
+          <div class="twocolordiv">
+            <img src="assets/quiz.png" width="60px">
+            <p><b>Quiz</b></p>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col (click)="loadContoh()">
+          <div class="twocolordiv">
+            <img src="assets/contoh.png" width="60px">
+            <p><b>Contoh Soal</b></p>
+          </div>
+        </ion-col>
+        <ion-col (click)="main('AboutPage')">
+          <div class="twocolordiv">
+            <img src="assets/profile.png" width="60px">
+            <p><b>Tentang Kami</b></p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
